@@ -1,12 +1,10 @@
-import preprocess from 'svelte-preprocess';
+import preprocess from "svelte-preprocess";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	// Consult https://github.com/sveltejs/svelte-preprocess
-	// for more information about preprocessors
-	preprocess: preprocess(),
+    preprocess: preprocess(),
 
-	kit: {
+    kit: {
         package: {
             exports(filepath) {
                 return filepath.endsWith("package.json") || filepath.endsWith("index.ts");
@@ -14,10 +12,10 @@ const config = {
         },
         vite: {
             optimizeDeps: {
-                exclude: ["codemirror"]
-            }
-        }
-	}
+                exclude: ["codemirror"],
+            },
+        },
+    },
 };
 
 export default config;
