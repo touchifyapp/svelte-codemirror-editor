@@ -1,0 +1,23 @@
+html {
+    font-family: sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.editor, .editor .cm-editor {
+    height: 100%;
+}
+
+input,
+select {
+    outline: none;
+}

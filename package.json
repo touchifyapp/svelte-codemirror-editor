@@ -27,6 +27,10 @@
 		"codemirror": "^6.0.0"
 	},
 	"devDependencies": {
+        "@codemirror/lang-css": "^6.0.0",
+        "@codemirror/lang-html": "^6.0.0",
+        "@codemirror/lang-javascript": "^6.0.0",
+		"@codemirror/theme-one-dark": "^6.0.0",
 		"@sveltejs/kit": "next",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
 		"@typescript-eslint/parser": "^5.27.0",
