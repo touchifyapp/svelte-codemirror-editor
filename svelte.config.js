@@ -12,6 +12,11 @@ const config = {
                 return filepath.endsWith("package.json") || filepath.endsWith("index.ts");
             },
         },
+        vite: {
+            optimizeDeps: {
+                exclude: ["codemirror"]
+            }
+        }
 	}
 };
 
