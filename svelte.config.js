@@ -1,4 +1,5 @@
 import preprocess from "svelte-preprocess";
+import adapter from "@sveltejs/adapter-static";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -10,6 +11,16 @@ const config = {
                 return filepath.endsWith("package.json") || filepath.endsWith("index.ts");
             },
         },
+
+        adapter: adapter({
+            pages: "build",
+            assets: "build",
+            fallback: null,
+        }),
+        prerender: {
+            default: true
+        },
+
         vite: {
             optimizeDeps: {
                 exclude: ["codemirror"],
