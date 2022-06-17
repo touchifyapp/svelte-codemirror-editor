@@ -24,7 +24,7 @@
         "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
         "lint": "prettier --check --plugin-search-dir=. . && eslint .",
         "format": "prettier --write --plugin-search-dir=. .",
-        "release": "npm run package && npm run release:zip && semantic-release --dry-run",
+        "release": "npm run package && npm run release:zip && semantic-release",
         "release:zip": "zip -r -j svelte-codemirror-editor.zip package"
     },
     "peerDependencies": {
