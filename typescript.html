@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="content-security-policy" content=""><title>svelte-codemirror-editor</title>
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-de85556d.css">
+	<link rel="stylesheet" href="/_app/immutable/assets/code-30de4941.css">
+	<link rel="modulepreload" href="/_app/immutable/start-d27a5139.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-72ff3cba.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-f859fa4e.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/typescript.svelte-1dba98f8.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/code-ab5615e1.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-d9a75361.js">
+    </head>
+    <body>
+        <div>
+
+
+
+
+<section class="layout svelte-p34x9q"><header class="header svelte-p34x9q"><h1 class="svelte-p34x9q"><a href="/" class="svelte-p34x9q">svelte-codemirror-editor</a></h1></header>
+
+    <nav class="menu svelte-p34x9q"><a href="/" class="menu__item  svelte-p34x9q">Configurator
+            </a><a href="/javascript" class="menu__item  svelte-p34x9q">Javascript
+            </a><a href="/typescript" class="menu__item menu__item_active svelte-p34x9q">Typescript
+            </a><a href="/html" class="menu__item  svelte-p34x9q">HTML
+            </a><a href="/css" class="menu__item  svelte-p34x9q">CSS
+            </a></nav>
+
+    <main class="svelte-p34x9q"><div class="scm-waiting editor svelte-kcx0g9"><div class="scm-waiting__loading scm-loading svelte-kcx0g9"><div class="scm-loading__spinner svelte-kcx0g9"></div>
+            <p class="scm-loading__text svelte-kcx0g9">Loading editor...</p></div>
+
+        <pre class="scm-pre cm-editor svelte-kcx0g9">/**
+ * Reduce calls to the passed function.
+ *
+ * @param func - Function to debounce.
+ * @param threshold - The delay to avoid recalling the function.
+ * @param execAsap - If true, the Function is called at the start of the threshold, otherwise the Function is called at the end of the threshold.
+ */
+export function debounce&lt;T extends (...args: any[]) =&gt; any&gt;(func: T, threshold: number, execAsap = false): T {
+  let timeout: any;
+
+  return function debounced(...args: any[]): any {
+    const self = this;
+
+    if (timeout) clearTimeout(timeout);
+    else if (execAsap) func.apply(self, args);
+
+    timeout = setTimeout(delayed, threshold || 100);
+
+    function delayed(): void {
+      if (!execAsap) func.apply(self, args);
+      timeout = null;
+    }
+  } as T;
+}</pre></div></main>
+</section>
+
+
+		<script type="module" data-sveltekit-hydrate="161ea68">
+		import { start } from "/_app/immutable/start-d27a5139.js";
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="161ea68"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [0, 6],
+				params: {},
+				routeId: "typescript"
+			}
+		});
+	</script></div>
+    </body>
+</html>
