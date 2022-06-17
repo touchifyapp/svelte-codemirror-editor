@@ -50,6 +50,22 @@ To use `svelte-codemirror-editor`, you need to import the package and use it as 
 | -------- | -------- | ----------------------------- |
 | `change` | `string` | Trigger when the code changes |
 
+## Usage with vite / svelte-kit
+
+If you try to use this component, you have to disable dependency optimization for `codemirror` and its extensions:
+
+```javascript
+const config = {
+    //...
+    optimizeDeps: {
+        exclude: ["codemirror", "@codemirror/language-javascript" /* ... */],
+    },
+    //...
+}
+```
+
+*Note: on svelte-kit, this parameter is under the `kit` property.*
+
 ## Exemples
 
 ### Basic usage

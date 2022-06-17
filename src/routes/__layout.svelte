@@ -2,13 +2,14 @@
     import "../styles.css";
 
     import { page } from "$app/stores";
+    import { base } from "$app/paths";
 
     const nav = [
-        { path: "/", text: "Configurator" },
-        { path: "/javascript", text: "Javascript" },
-        { path: "/typescript", text: "Typescript" },
-        { path: "/html", text: "HTML" },
-        { path: "/css", text: "CSS" },
+        { path: `${base}`, text: "Configurator" },
+        { path: `${base}/javascript`, text: "Javascript" },
+        { path: `${base}/typescript`, text: "Typescript" },
+        { path: `${base}/html`, text: "HTML" },
+        { path: `${base}/css`, text: "CSS" },
     ];
 </script>
 
@@ -18,7 +19,7 @@
 
 <section class="layout">
     <header class="header">
-        <h1><a href="/">svelte-codemirror-editor</a></h1>
+        <h1><a href={base}>svelte-codemirror-editor</a></h1>
     </header>
 
     <nav class="menu">

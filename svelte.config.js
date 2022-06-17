@@ -18,7 +18,10 @@ const config = {
             fallback: null,
         }),
         prerender: {
-            default: true
+            default: true,
+        },
+        paths: {
+            base: "/svelte-codemirror-editor",
         },
 
         vite: {
