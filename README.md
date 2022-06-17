@@ -1,6 +1,6 @@
 # svelte-codemirror-editor
 
-![License](https://img.shields.io/badge/license-MIT-green.svg)](http://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](http://opensource.org/licenses/MIT)
 [![NPM version](https://img.shields.io/npm/v/svelte-codemirror-editor.svg?style=flat-square)](https://npmjs.org/package/svelte-codemirror-editor)
 [![NPM download](https://img.shields.io/npm/dm/svelte-codemirror-editor.svg?style=flat-square)](https://npmjs.org/package/svelte-codemirror-editor)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
@@ -101,3 +101,7 @@ To use `svelte-codemirror-editor`, you need to import the package and use it as 
     }}
 />
 ```
+
+## License
+
+[MIT](LICENSE)
