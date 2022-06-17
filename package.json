@@ -16,7 +16,6 @@
     "scripts": {
         "dev": "svelte-kit dev",
         "build": "svelte-kit build",
-        "build:zip": "zip -r -j svelte-codemirror-editor.zip package",
         "package": "svelte-kit package",
         "preview": "svelte-kit preview",
         "prepare": "svelte-kit sync",
@@ -25,7 +24,8 @@
         "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
         "lint": "prettier --check --plugin-search-dir=. . && eslint .",
         "format": "prettier --write --plugin-search-dir=. .",
-        "release": "npm run build && npm run build:zip && semantic-release"
+        "release": "npm run package && npm run release:zip && semantic-release --dry-run",
+        "release:zip": "zip -r -j svelte-codemirror-editor.zip package"
     },
     "peerDependencies": {
         "codemirror": "^6.0.0"
