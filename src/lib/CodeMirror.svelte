@@ -27,6 +27,7 @@
     export let tabSize = 2;
 
     export let styles: ThemeSpec | null | undefined = undefined;
+    export let lineWrapping = false;
     export let editable = true;
     export let readonly = false;
     export let placeholder: string | HTMLElement | null | undefined = undefined;
@@ -43,7 +44,7 @@
     let first_update = true;
 
     $: state_extensions = [
-        ...get_base_extensions(basic, useTab, tabSize, placeholder, editable, readonly, lang),
+        ...get_base_extensions(basic, useTab, tabSize, lineWrapping, placeholder, editable, readonly, lang),
         ...get_theme(theme, styles),
         ...extensions,
     ];
@@ -120,6 +121,7 @@
         basic: boolean,
         useTab: boolean,
         tabSize: number,
+        lineWrapping: boolean,
         placeholder: string | HTMLElement | null | undefined,
         editable: boolean,
         readonly: boolean,
@@ -135,6 +137,7 @@
         if (useTab) extensions.push(keymap.of([indentWithTab]));
         if (placeholder) extensions.push(placeholderExt(placeholder));
         if (lang) extensions.push(lang);
+        if (lineWrapping) extensions.push(EditorView.lineWrapping);
 
         return extensions;
     }

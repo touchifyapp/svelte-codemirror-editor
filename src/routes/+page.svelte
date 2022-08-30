@@ -14,6 +14,7 @@
         basic: true,
         useTab: true,
         editable: true,
+        lineWrapping: false,
         readonly: false,
         tabSize: 2,
         placeholder: null,
@@ -80,6 +81,10 @@
             <div class="toggle">
                 <input id="readonly" type="checkbox" bind:checked={props.readonly} />
                 <label for="readonly">Read-only</label>
+            </div>
+            <div class="toggle">
+                <input id="lineWrapping" type="checkbox" bind:checked={props.lineWrapping} />
+                <label for="lineWrapping">Line Wrapping</label>
             </div>
         </div>
 
