@@ -1,7 +1,7 @@
 <script lang="ts">
     import CodeMirror from "$lib";
     import { javascript } from "@codemirror/lang-javascript";
-    import { typescriptValue } from "./_util/code";
+    import { typescriptValue } from "../_util/code";
 
     const code = typescriptValue();
 </script>

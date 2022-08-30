@@ -1,7 +1,7 @@
 <script lang="ts">
     import CodeMirror from "$lib";
     import { html } from "@codemirror/lang-html";
-    import { htmlValue } from "./_util/code";
+    import { htmlValue } from "../_util/code";
 
     const code = htmlValue();
 </script>
