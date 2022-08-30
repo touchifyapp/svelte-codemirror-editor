@@ -4,15 +4,16 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="content-security-policy" content=""><title>svelte-codemirror-editor</title>
-	<link rel="stylesheet" href="/svelte-codemirror-editor/_app/immutable/assets/pages/__layout.svelte-de85556d.css">
-	<link rel="stylesheet" href="/svelte-codemirror-editor/_app/immutable/assets/code-30de4941.css">
-	<link rel="modulepreload" href="/svelte-codemirror-editor/_app/immutable/start-80f4c0c9.js">
-	<link rel="modulepreload" href="/svelte-codemirror-editor/_app/immutable/chunks/index-72ff3cba.js">
-	<link rel="modulepreload" href="/svelte-codemirror-editor/_app/immutable/chunks/paths-396f020f.js">
-	<link rel="modulepreload" href="/svelte-codemirror-editor/_app/immutable/pages/__layout.svelte-eb7dc31c.js">
-	<link rel="modulepreload" href="/svelte-codemirror-editor/_app/immutable/pages/typescript.svelte-1dba98f8.js">
-	<link rel="modulepreload" href="/svelte-codemirror-editor/_app/immutable/chunks/code-ab5615e1.js">
-	<link rel="modulepreload" href="/svelte-codemirror-editor/_app/immutable/chunks/index-d9a75361.js">
+	<link href="/svelte-codemirror-editor/_app/immutable/assets/_layout-8ae1f7cf.css" rel="stylesheet">
+	<link href="/svelte-codemirror-editor/_app/immutable/assets/code-9514c83f.css" rel="stylesheet">
+	<link rel="modulepreload" href="/svelte-codemirror-editor/_app/immutable/start-27914d23.js">
+	<link rel="modulepreload" href="/svelte-codemirror-editor/_app/immutable/chunks/index-37427c95.js">
+	<link rel="modulepreload" href="/svelte-codemirror-editor/_app/immutable/chunks/singletons-35bcb4ba.js">
+	<link rel="modulepreload" href="/svelte-codemirror-editor/_app/immutable/components/pages/_layout.svelte-1cd6638f.js">
+	<link rel="modulepreload" href="/svelte-codemirror-editor/_app/immutable/chunks/stores-579315a5.js">
+	<link rel="modulepreload" href="/svelte-codemirror-editor/_app/immutable/components/pages/typescript/_page.svelte-ef92fea8.js">
+	<link rel="modulepreload" href="/svelte-codemirror-editor/_app/immutable/chunks/code-69b5cde9.js">
+	<link rel="modulepreload" href="/svelte-codemirror-editor/_app/immutable/chunks/index-42b99670.js">
     </head>
     <body>
         <div>
@@ -39,7 +40,7 @@
  * @param threshold - The delay to avoid recalling the function.
  * @param execAsap - If true, the Function is called at the start of the threshold, otherwise the Function is called at the end of the threshold.
  */
-export function debounce&lt;T extends (...args: any[]) =&gt; any&gt;(func: T, threshold: number, execAsap = false): T {
+export function debounce&lt;T extends (...args: any[]) => any>(func: T, threshold: number, execAsap = false): T {
   let timeout: any;
 
   return function debounced(...args: any[]): any {
@@ -59,23 +60,28 @@ export function debounce&lt;T extends (...args: any[]) =&gt; any&gt;(func: T, th
 </section>
 
 
-		<script type="module" data-sveltekit-hydrate="afjgsg">
-		import { start } from "/svelte-codemirror-editor/_app/immutable/start-80f4c0c9.js";
+		<script type="module" data-sveltekit-hydrate="1wc45a8">
+		import { set_public_env, start } from "/svelte-codemirror-editor/_app/immutable/start-27914d23.js";
+
+		set_public_env({});
+
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="afjgsg"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1wc45a8"]').parentNode,
 			paths: {"base":"/svelte-codemirror-editor","assets":"/svelte-codemirror-editor"},
-			session: {},
 			route: true,
 			spa: false,
 			trailing_slash: "never",
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [0, 6],
+				node_ids: [0, 6],
 				params: {},
-				routeId: "typescript"
+				routeId: "typescript",
+				data: (function(a){return [a,a]}(null)),
+				errors: null
 			}
 		});
-	</script></div>
+	</script>
+	</div>
     </body>
 </html>
