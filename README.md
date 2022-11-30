@@ -52,9 +52,10 @@ To use `svelte-codemirror-editor`, you need to import the package and use it as 
 
 ## Usage with vite / svelte-kit
 
-If you try to use this component, you have to disable dependency optimization for `codemirror` and its extensions:
+If you try to use this component with `vite` or `svelte-kit`, you have to disable dependency optimization for `codemirror` and all its extensions.
 
 ```javascript
+// vite.config.js
 const config = {
     //...
     optimizeDeps: {
@@ -63,8 +64,6 @@ const config = {
     //...
 }
 ```
-
-*Note: on svelte-kit, this parameter is under the `kit` property.*
 
 ## Exemples
 
