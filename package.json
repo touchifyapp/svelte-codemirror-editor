@@ -27,7 +27,8 @@
     "release:zip": "zip -r -j svelte-codemirror-editor.zip package"
   },
   "peerDependencies": {
-    "codemirror": "^6.0.0"
+    "codemirror": "^6.0.0",
+    "svelte": "^3.0.0 || ^4.0.0"
   },
   "devDependencies": {
     "@codemirror/lang-css": "^6.0.0",
@@ -51,7 +52,7 @@
     "prettier": "^3.1.0",
     "prettier-plugin-svelte": "^3.1.2",
     "semantic-release": "^22.0.8",
-    "svelte": "^3.44.0",
+    "svelte": "^4.2.7",
     "svelte-check": "^3.6.2",
     "svelte-preprocess": "^5.1.1",
     "tslib": "^2.6.2",
