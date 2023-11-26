@@ -32,8 +32,8 @@
     "test": "npm run lint && npm run check",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "prettier --check --plugin-search-dir=. . && eslint .",
-    "format": "prettier --write --plugin-search-dir=. .",
+    "lint": "prettier --check . && eslint .",
+    "format": "prettier --write .",
     "release": "npm run package && npm run release:zip && semantic-release",
     "release:zip": "zip -r svelte-codemirror-editor.zip LICENSE README.md package.json dist"
   },
