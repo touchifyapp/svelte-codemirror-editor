@@ -20,6 +20,7 @@
         placeholder: null,
         lang: null,
         theme: null,
+        nodebounce: false
     };
 
     const languages = ["custom", "javascript", "typescript", "css", "html"];
@@ -85,6 +86,10 @@
             <div class="toggle">
                 <input id="lineWrapping" type="checkbox" bind:checked={props.lineWrapping} />
                 <label for="lineWrapping">Line Wrapping</label>
+            </div>
+            <div class="toggle">
+                <input id="nodebounce" type="checkbox" bind:checked={props.nodebounce} />
+                <label for="nodebounce">No debounce</label>
             </div>
         </div>
 

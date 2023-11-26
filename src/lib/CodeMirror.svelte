@@ -32,6 +32,8 @@
     export let readonly = false;
     export let placeholder: string | HTMLElement | null | undefined = undefined;
 
+    export let nodebounce = false;
+
     const is_browser = typeof window !== "undefined";
     const dispatch = createEventDispatcher<{ change: string }>();
 
@@ -52,12 +54,12 @@
     $: view && update(value);
     $: view && state_extensions && reconfigure();
 
+    $: on_change = nodebounce ? handle_change : debounce(handle_change, 300);
+
     onMount(() => (view = create_editor_view()));
     onDestroy(() => view?.destroy());
 
     function create_editor_view(): EditorView {
-        const on_change = debounce(handle_change, 300);
-
         return new EditorView({
             parent: element,
             state: create_editor_state(value),
