@@ -42,6 +42,7 @@ To use `svelte-codemirror-editor`, you need to import the package and use it as 
 | `editable`    | `boolean`         | Whether to make the editor editable or not.                          | `true`        |
 | `readonly`    | `boolean`         | Whether to make the editor readonly or not.                          | `false`       |
 | `placeholder` | `string`          | A placeholder to include when value is empty.                        | `undefined`   |
+| `nodebounce`  | `boolean`         | Whether to stop debouncing value updates.                            | `false`       |
 | `styles`      | `ThemeSpec`       | In-place theme configuration. _See exemple below_.                   | `undefined`   |
 
 ## Events
