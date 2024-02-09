@@ -35,8 +35,7 @@
     export let nodebounce = false;
 
     const is_browser = typeof window !== "undefined";
-    const dispatch = createEventDispatcher<{ change: string }>();
-    const dispatchReady = createEventDispatcher<{ ready: string }>();
+    const dispatch = createEventDispatcher<{ change: string, ready: EditorView }>();
 
     let element: HTMLDivElement;
     let view: EditorView;
@@ -59,7 +58,7 @@
 
     onMount(() => {
         view = create_editor_view();
-        dispatchReady(view);
+        dispatch('ready', view);
     });
     onDestroy(() => view?.destroy());
 
