@@ -36,6 +36,7 @@
 
     const is_browser = typeof window !== "undefined";
     const dispatch = createEventDispatcher<{ change: string }>();
+    const dispatchReady = createEventDispatcher<{ ready: string }>();
 
     let element: HTMLDivElement;
     let view: EditorView;
@@ -56,7 +57,10 @@
 
     $: on_change = nodebounce ? handle_change : debounce(handle_change, 300);
 
-    onMount(() => (view = create_editor_view()));
+    onMount(() => {
+        view = create_editor_view();
+        dispatchReady(view);
+    });
     onDestroy(() => view?.destroy());
 
     function create_editor_view(): EditorView {
