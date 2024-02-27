@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/touchifyapp/svelte-codemirror-editor/compare/v1.2.0...v1.3.0) (2024-02-27)
+
+
+### Bug Fixes
+
+* use same event dispatcher ([409cae6](https://github.com/touchifyapp/svelte-codemirror-editor/commit/409cae6ceaae267ad92001708cba155be45b8c98))
+
+
+### Features
+
+* dispatch event 'ready' when editorview initialized ([b400ecf](https://github.com/touchifyapp/svelte-codemirror-editor/commit/b400ecf7867e7b59769ad26eb9eeb2ddd0184ce3))
+
 # [1.2.0](https://github.com/touchifyapp/svelte-codemirror-editor/compare/v1.1.0...v1.2.0) (2023-11-27)
 
 
