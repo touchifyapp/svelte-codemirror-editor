@@ -47,9 +47,10 @@ To use `svelte-codemirror-editor`, you need to import the package and use it as 
 
 ## Events
 
-| Event    | Type     | Description                   |
-| -------- | -------- | ----------------------------- |
-| `change` | `string` | Trigger when the code changes |
+| Event    | Type         | Description                                                                     |
+| -------- | ------------ | ------------------------------------------------------------------------------- |
+| `change` | `string`     | Trigger when the code changes.                                                  |
+| `ready`  | `EditorView` | Trigger when the editor is ready. Allows to retrieve the `EditorView` instance. |
 
 ## Usage with vite / svelte-kit
 
@@ -116,6 +117,17 @@ const config = {
         },
     }}
 />
+```
+
+### Get EditorView instance
+
+```svelte
+<script lang="ts">
+    import CodeMirror from "svelte-codemirror-editor";
+    let view: EditorView;
+</script>
+
+<CodeMirror on:ready={(e) => view = e.detail} />
 ```
 
 ## License
