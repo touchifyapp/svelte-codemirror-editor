@@ -35,7 +35,7 @@
     export let nodebounce = false;
 
     const is_browser = typeof window !== "undefined";
-    const dispatch = createEventDispatcher<{ change: string, ready: EditorView }>();
+    const dispatch = createEventDispatcher<{ change: string, ready: EditorView, reconfigure: EditorView }>();
 
     let element: HTMLDivElement;
     let view: EditorView;
@@ -85,6 +85,8 @@
         view.dispatch({
             effects: StateEffect.reconfigure.of(state_extensions),
         });
+        
+        dispatch('reconfigure', view);
     }
 
     function update(value: string | null | undefined): void {
