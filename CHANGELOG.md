@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/touchifyapp/svelte-codemirror-editor/compare/v1.3.0...v1.4.0) (2024-05-06)
+
+
+### Features
+
+* expose editorview on reconfigure via emit ([408a222](https://github.com/touchifyapp/svelte-codemirror-editor/commit/408a222fe13baecf095265c0756ca6d8bdcd7b87))
+
 # [1.3.0](https://github.com/touchifyapp/svelte-codemirror-editor/compare/v1.2.0...v1.3.0) (2024-02-27)
 
 
