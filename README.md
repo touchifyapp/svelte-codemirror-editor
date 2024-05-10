@@ -62,7 +62,7 @@ If you try to use this component with `vite` or `svelte-kit`, you have to disabl
 const config = {
     //...
     optimizeDeps: {
-        exclude: ["codemirror", "@codemirror/language-javascript" /* ... */],
+        exclude: ["svelte-codemirror-editor", "codemirror", "@codemirror/language-javascript" /* ... */],
     },
     //...
 }
