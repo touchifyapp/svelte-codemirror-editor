@@ -1,3 +1,11 @@
+## [1.4.1](https://github.com/touchifyapp/svelte-codemirror-editor/compare/v1.4.0...v1.4.1) (2024-09-05)
+
+
+### Bug Fixes
+
+* allow svelte 5 ([82e58ba](https://github.com/touchifyapp/svelte-codemirror-editor/commit/82e58baaffb3f372858bae51fbb455bfd2f3ba6e))
+* upgrade to sveltekit 2 ([3044f77](https://github.com/touchifyapp/svelte-codemirror-editor/commit/3044f77ad180da7c6fcad85db811c748df9f92b3))
+
 # [1.4.0](https://github.com/touchifyapp/svelte-codemirror-editor/compare/v1.3.0...v1.4.0) (2024-05-06)
 
 
