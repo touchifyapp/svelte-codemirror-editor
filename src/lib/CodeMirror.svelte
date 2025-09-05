@@ -158,7 +158,7 @@
 </script>
 
 {#if is_browser}
-    <div class="codemirror-wrapper {classes}" bind:this={element} />
+    <div class="codemirror-wrapper {classes}" bind:this={element}></div>
 {:else}
     <div class="scm-waiting {classes}">
         <div class="scm-waiting__loading scm-loading">
