@@ -1,0 +1,1 @@
+import"../chunks/DsnmJJEf.js";import{i as t}from"../chunks/DSPG2flK.js";import{p as s,c as i,g as p,h as m}from"../chunks/Cybk0ZZa.js";import{C as n,j as c}from"../chunks/BbhjUS__.js";import{j as f}from"../chunks/CPi9oYFe.js";function v(a,r){s(r,!1);const e=c();t();{let o=m(f);n(a,{get value(){return e},get lang(){return p(o)},class:"editor"})}i()}export{v as component};
