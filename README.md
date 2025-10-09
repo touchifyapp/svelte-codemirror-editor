@@ -56,7 +56,7 @@ To use `svelte-codemirror-editor`, you need to import the package and use it as 
 | `foldGutter`           | `boolean` \| `object` | Enable/disable and/or configure fold gutter.                          | `true`        |
 | `drawSelection`        | `boolean` \| `object` | Enable/disable and/or configure draw selection.                       | `true`        |
 | `dropCursor`           | `boolean`            | Whether to show the drop cursor.                                      | `true`        |
-| `lineNumbers`          | `boolean`            | Whether to indent on input.                                           | `true`        |
+| `indentOnInput`        | `boolean`            | Whether to indent on input.                                           | `true`        |
 | `syntaxHighlighting`   | `boolean` \| `object` | Enable/disable and/or configure syntax highlighting.                  | `true`        |
 | `bracketMatching`      | `boolean` \| `object` | Enable/disable and/or configure bracket matching.                     | `true`        |
 | `closeBrackets`        | `boolean`            | Whether to close brackets automatically.                              | `true`        |
