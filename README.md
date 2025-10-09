@@ -151,7 +151,7 @@ const config = {
     let view = $state<EditorView>();
 </script>
 
-<CodeMirror onready={(e) => view = e.detail} />
+<CodeMirror onready={(cm_view) => view = cm_view} />
 ```
 
 ## License
