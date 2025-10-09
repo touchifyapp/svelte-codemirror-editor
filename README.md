@@ -64,9 +64,8 @@ To use `svelte-codemirror-editor`, you need to import the package and use it as 
 | `rectangularSelection` | `boolean` \| `object` | Enable/disable and/or configure rectangular selection.                | `true`        |
 | `crosshairCursor`      | `boolean` \| `object` | Enable/disable and/or configure crosshair cursor.                     | `true`        |
 | `placeholder`          | `string`             | The placeholder text or element to show when the editor is empty.     | `undefined`   |
-| `nodebounce`           | `boolean`            | Whether to stop debouncing value updates.                             | `false`       |
+| `nodebounce`           | `boolean`            | Disable onchange debounce for value updates. (may impact performance) | `false`       |
 | `styles`               | `ThemeSpec`          | In-place theme configuration. _See exemple below_.                    | `undefined`   |
-| `nodebounce`           | `boolean`            | Disable onchange debounce (warning: impact performance).              | `false`       |
 
 ## Events
 
