@@ -52,21 +52,20 @@ To use `svelte-codemirror-editor`, you need to import the package and use it as 
 | `lineWrapping`         | `boolean`            | Whether to wrap lines in the editor or not.                           | `false`       |
 | `lineNumbers`          | `boolean`            | Whether to show line numbers or not.                                  | `true`        |
 | `highlight`            | `object`             | Hightlighting options.                                                | `{}`          |
-| `history`              | `boolean` | `object` | Enable/Disable and/or configure history.                              | `true`        |
-| `foldGutter`           | `boolean` | `object` | Enable/disable and/or configure fold gutter.                          | `true`        |
-| `drawSelection`        | `boolean` | `object` | Enable/disable and/or configure draw selection.                       | `true`        |
+| `history`              | `boolean` \| `object` | Enable/Disable and/or configure history.                              | `true`        |
+| `foldGutter`           | `boolean` \| `object` | Enable/disable and/or configure fold gutter.                          | `true`        |
+| `drawSelection`        | `boolean` \| `object` | Enable/disable and/or configure draw selection.                       | `true`        |
 | `dropCursor`           | `boolean`            | Whether to show the drop cursor.                                      | `true`        |
-| `lineNumbers`          | `boolean`            | Whether to indent on input.                                           | `true`        |
-| `syntaxHighlighting`   | `boolean` | `object` | Enable/disable and/or configure syntax highlighting.                  | `true`        |
-| `bracketMatching`      | `boolean` | `object` | Enable/disable and/or configure bracket matching.                     | `true`        |
+| `indentOnInput`        | `boolean`            | Whether to indent on input.                                           | `true`        |
+| `syntaxHighlighting`   | `boolean` \| `object` | Enable/disable and/or configure syntax highlighting.                  | `true`        |
+| `bracketMatching`      | `boolean` \| `object` | Enable/disable and/or configure bracket matching.                     | `true`        |
 | `closeBrackets`        | `boolean`            | Whether to close brackets automatically.                              | `true`        |
-| `autocompletion`       | `boolean` | `object` | Enable/disable and/or configure autocompletion.                       | `true`        |
-| `rectangularSelection` | `boolean` | `object` | Enable/disable and/or configure rectangular selection.                | `true`        |
-| `crosshairCursor`      | `boolean` | `object` | Enable/disable and/or configure crosshair cursor.                     | `true`        |
+| `autocompletion`       | `boolean` \| `object` | Enable/disable and/or configure autocompletion.                       | `true`        |
+| `rectangularSelection` | `boolean` \| `object` | Enable/disable and/or configure rectangular selection.                | `true`        |
+| `crosshairCursor`      | `boolean` \| `object` | Enable/disable and/or configure crosshair cursor.                     | `true`        |
 | `placeholder`          | `string`             | The placeholder text or element to show when the editor is empty.     | `undefined`   |
-| `nodebounce`           | `boolean`            | Whether to stop debouncing value updates.                             | `false`       |
+| `nodebounce`           | `boolean`            | Disable onchange debounce for value updates. (may impact performance) | `false`       |
 | `styles`               | `ThemeSpec`          | In-place theme configuration. _See exemple below_.                    | `undefined`   |
-| `nodebounce`           | `boolean`            | Disable onchange debounce (warning: impact performance).              | `false`       |
 
 ## Events
 
