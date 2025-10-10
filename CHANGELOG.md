@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/touchifyapp/svelte-codemirror-editor/compare/v2.0.0...v2.1.0) (2025-10-10)
+
+
+### Features
+
+* add keybindings property to register custom keymap handler ([cc7a8d5](https://github.com/touchifyapp/svelte-codemirror-editor/commit/cc7a8d5ac78d0f2a914d4497ea1509113e44fa89))
+
 # [2.0.0](https://github.com/touchifyapp/svelte-codemirror-editor/compare/v1.4.2...v2.0.0) (2025-09-08)
 
 
