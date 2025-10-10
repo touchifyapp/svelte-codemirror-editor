@@ -68,6 +68,8 @@
 
         /** Additional extensions to inject in the editor.*/
         extensions?: Extension[];
+        /** Additional keybindings to register. */
+        keybindings?: KeyBinding[];
         /** In-place theme configuration. */
         styles?: ThemeSpec | null | undefined;
 
@@ -141,6 +143,7 @@
         lang,
         theme,
         extensions = [],
+        keybindings = [],
         allowMultiSelect = true,
         useTab = true,
         tabSize = 2,
@@ -274,7 +277,7 @@
             EditorState.allowMultipleSelections.of(allowMultiSelect),
         ];
 
-        const key_bindings: KeyBinding[] = [...defaultKeymap, ...searchKeymap, ...lintKeymap];
+        const key_bindings: KeyBinding[] = [...keybindings, ...defaultKeymap, ...searchKeymap, ...lintKeymap];
 
         if (useTab) key_bindings.push(indentWithTab);
 
